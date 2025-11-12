@@ -17,3 +17,36 @@ function getComputerChoice() {
 function getHumanChoice() {
   return prompt('please enter your choice').toLocaleLowerCase();
 }
+
+let computerScore = 0;
+let humanScore = 0;
+
+// create playRound function
+function playRound(human, computer) {
+  human = getHumanChoice();
+  computer = getComputerChoice();
+  // game logic
+  if (human === computer) {
+    console.log('No winner No loser');
+  } else if (human === 'rock' && computer === 'paper') {
+    computerScore += 1;
+    console.log('You lose paper beats rock');
+  } else if (human === 'paper' && computer === 'rock') {
+    humanScore += 1;
+    console.log('you win paper beats rock');
+  } else if (human === 'rock' && computer === 'scissors') {
+    humanScore += 1;
+    console.log('you win rock beats scissors');
+  } else if (human === 'scissors' && computer === 'rock') {
+    computerScore += 1;
+    console.log('you lose rock beats scissors');
+  } else if (human === 'paper' && computer === 'scissors') {
+    computerScore += 1;
+    console.log('you lose scissors beats paper');
+  } else if (human === 'scissors' && computer === 'paper') {
+    humanScore += 1;
+    console.log('you win scissors beats paper');
+  }
+}
+
+//playRound();
