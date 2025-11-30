@@ -83,17 +83,17 @@ function playGame() {
     }
   }
 
-  playRound()
-  playRound()
-  playRound()
-  playRound()
-  playRound()
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+  playRound();
 
   if (humanScore > computerScore) {
-    console.log(`Final result Human Wins ${humanScore} To ${computerScore}`)
+    console.log(`Final result Human Wins ${humanScore} To ${computerScore}`);
   } else {
-    console.log(`Final result computer wins ${computerScore} To ${humanScore}`)
+    console.log(`Final result computer wins ${computerScore} To ${humanScore}`);
   }
 }
 
-playGame();
+//playGame();
