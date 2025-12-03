@@ -1,5 +1,6 @@
 // Rock  paper scissors game logic
 
+
 // create getComputerChoice function
 function getComputerChoice() {
   let choice = Math.floor(Math.random() * 3);
@@ -13,10 +14,11 @@ function getComputerChoice() {
   }
 }
 
+
 // create getHumanChoice function
-function getHumanChoice() {
-  return prompt('please enter your choice').toLocaleLowerCase();
-}
+//function getHumanChoice() {
+//  return prompt('please enter your choice').toLocaleLowerCase();
+//}
 
 // let computerScore = 0;
 // let humanScore = 0;
